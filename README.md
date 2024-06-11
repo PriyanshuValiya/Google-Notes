@@ -1,11 +1,11 @@
 # Google-Notes
 
-Google Notes is the Note Application That Gives Access User To Share Their Thoghts In Group and Can Recieve Notes From Group Members.
+Google Notes is the Note Application That Gives Access User To Share Their Thoughts In Group and Can Receive Notes From Group Members.
 
-# Key Features
-* Read, Write Notes.
-* Edit and Delete Notes, Which Were Created By Us.
-* Search Notes By Username.
+ # Key Features
+  * Read, Write Notes.
+  * Edit and Delete Notes, Which Were Created By Us.
+  * Search Notes By Username.
 
   # Tech Stack
   * Frontend : EJS Templetes, CSS, Bootstrap.
