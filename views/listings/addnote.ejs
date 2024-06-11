@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="col d-flex justify-content-between align-items-center px-5 py-4 spe-font">
+    <h1 class="h3">Add New Note..</h1>
+</div>
+  
+  
+<form action="/dashboard/add" method="POST" class="position-relative">
+    <div class="form-group mb-4 position-absolute px-5 spe-font" style="left:1px; top:1px; right: 1px;">
+     <input type="text" class="form-control fw-bold border-0 fs-4 border-bottom border-dark border border-2" id="title" name="title" value="" placeholder="Add Title...">
+    </div>
+  
+    <div class="form-group mb-4 px-5">
+     <textarea class="form-control pt-5 fs-4" id="body" name="body" placeholder="Add Note's Detail..." rows="12"></textarea>
+    </div>
+  
+    <div class="form-group border-bottom border-dark border-2">
+     <button type="submit" class="btn btn-primary btn-lg spe-font addnote-btn">Add</button>
+    </div>
+</form><hr>
