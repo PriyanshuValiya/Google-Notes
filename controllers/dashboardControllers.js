@@ -7,7 +7,7 @@ module.exports.homepage = async (req, res) => {
 };
 
 module.exports.dashboard = async (req, res) => {
-    const user = req.user.username;
+    const user = req.user?.username;
     const allNotes = await Note.find({});
     res.render("./listings/dashboard.ejs", {allNotes, user});
 };
@@ -58,7 +58,7 @@ module.exports.viewNote = async (req, res) => {
     const noteId = req.params.id;
     const note = await Note.findById({_id: noteId});
     const listing = await Note.findById(noteId).populate("user");
-    const currUser = req.user.username;
+    const currUser = req.user?.username;
     res.render("./listings/viewnote.ejs", {note, listing, currUser});
 };
 
