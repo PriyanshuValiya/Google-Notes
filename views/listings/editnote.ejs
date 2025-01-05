@@ -71,14 +71,14 @@
   </div>
 
 
-  <form method="POST" action="/dashboard/item/<%= note._id%>?_method=PUT" class="position-relative">
+  <form method="POST" action="/dashboard/item/<%= note?._id%>?_method=PUT" class="position-relative">
     <div class="px-5">
       <label class="form-label"></label>
-      <input class="form-control note-title title" id="title" name="title" value="<%= note.title %>" placeholder="Enter Your Title...">
+      <input class="form-control note-title title" id="title" name="title" value="<%= note?.title %>" placeholder="Enter Your Title...">
     </div>
 
     <div class="mb-3 px-5">
-      <textarea class="form-control note-info title" id="body" name="body" rows="10" placeholder="Enter Detail Information..."><%= note.body %></textarea>
+      <textarea class="form-control note-info title" id="body" name="body" rows="10" placeholder="Enter Detail Information..."><%= note?.body %></textarea>
     </div>
     </div>
     <button type="submit" class="save-btn">Save</button>
@@ -184,11 +184,11 @@
               <form method="POST" action="?_method=PUT" class="position-relative">
                 <div class="px-5">
                   <label class="form-label"></label>
-                  <input class="form-control note-title title" id="title" name="title" value="<%= note.title %>" placeholder="Enter Your Title...">
+                  <input class="form-control note-title title" id="title" name="title" value="<%= note?.title %>" placeholder="Enter Your Title...">
                 </div>
             
                 <div class="mb-3 px-5">
-                  <textarea class="form-control note-info title" id="body" name="body" rows="10" placeholder="Enter Detail Information..."><%= note.body %></textarea>
+                  <textarea class="form-control note-info title" id="body" name="body" rows="10" placeholder="Enter Detail Information..."><%= note?.body %></textarea>
                 </div>
                 </div>
                 <button type="submit" class="save-btn">Save</button>

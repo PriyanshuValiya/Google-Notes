@@ -18,6 +18,7 @@ const { isLoggedIn } = require("./public/middleware.js");
 const dashboardController = require("./controllers/dashboardControllers.js");
 
 
+const PORT = 3000;
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "/public")));
@@ -133,6 +134,6 @@ app.use((req, res) => {
     res.send("404! Current Page Is Not Found :(");
 });
 
-app.listen(2203, () => {
-    console.log("Port 2203 is Listening...")
+app.listen(PORT, () => {
+    console.log(`Server of live on http://localhost:${PORT}`)
 });

@@ -52,10 +52,10 @@
         <%  for(note of allNotes) { %>
           <div class="main-card card border-3 border-primary rounded mb-3" style="width: 20rem; display: flex; flex-wrap: wrap;">
             <div class="card-body main-card bg-light">
-              <h6 class="card-title bg-light"><%= note.title %></h6>
-              <p class="card-text bg-light temp"><%= note.body %></p>
+              <h6 class="card-title bg-light"><%= note?.title %></h6>
+              <p class="card-text bg-light temp"><%= note?.body %></p>
             </div>
-            <a href="/dashboard/item/<%=note._id%>" class="bg-light text-end px-3" style="background-color: white;">More</a>
+            <a href="/dashboard/item/<%=note?._id%>" class="bg-light text-end px-3" style="background-color: white;">More</a>
           </div>&nbsp;&nbsp;&nbsp;&nbsp;
         <%  } %>
         <% } else { %>

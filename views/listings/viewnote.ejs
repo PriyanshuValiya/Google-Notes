@@ -8,7 +8,7 @@
         <% if(currUser && currUser == listing.user) {%>
         <div class="buttons">
           <a href="/dashboard/item/<%=note._id%>/edit" type="button" class="btn btn-success">Edit</a>
-          <form method="POST" action="/dashboard/item/<%=note._id%>/?_method=DELETE">
+          <form method="POST" action="/dashboard/item/<%=note?._id%>/?_method=DELETE">
           <button type="submit" class="btn btn-danger">Delete</button>
         </form>
         </div>
@@ -16,10 +16,10 @@
 
       </div>
       <div class="view-note">
-        <h5 class="view-title"><%= note.title %></h5>
+        <h5 class="view-title"><%= note?.title %></h5>
       </div>
-      <p class="view-body"><%= note.body %></p>
-      <p>Wrote By : <i><b><%= listing.user %> </b></i></p><br><br><br>
+      <p class="view-body"><%= note?.body %></p>
+      <p>Wrote By : <i><b><%= listing?.user %> </b></i></p><br><br><br>
       <div class="home"><a href="/dashboard" type="button" class="btn btn-primary" style="width: 80px;  float: right;">Home</a></div>
     </div>
   </div>
